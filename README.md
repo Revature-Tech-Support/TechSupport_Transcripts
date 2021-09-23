@@ -23,14 +23,11 @@ Storing message transcripts on a user-by-user and chat-by-chat basis with all ki
 
 
 ## Technology:
-- Java
-   - Google Standards
-   - Lombok
+- Java 8+
 - Spring Boot
-- JUnit 5
-- Logback classic (SLF4J)
+- Spring Cloud
+- Spring Cloud Netflix
+- Spring Webflux
 - Maven
 - Reactor Netty
 - Cassandra
-- Spring Webflux
-- Amazon Web Services
