@@ -13,12 +13,18 @@ public class Chat {
     @PrimaryKeyColumn(type = PrimaryKeyType.PARTITIONED)
     UUID chatID;
     @PrimaryKeyColumn(type = PrimaryKeyType.CLUSTERED)
-    UUID userID;
+    int userID;
     @Column
     String transcript;
 
-    public Chat(UUID chatID, UUID userID, String transcript) {
+    public Chat(UUID chatID, int userID, String transcript) {
         this.chatID = chatID;
+        this.userID = userID;
+        this.transcript = transcript;
+    }
+
+    public Chat(String transcript, int userID) {
+        this.chatID = UUID.randomUUID();
         this.userID = userID;
         this.transcript = transcript;
     }
@@ -34,11 +40,11 @@ public class Chat {
         this.chatID = chatID;
     }
 
-    public UUID getUserID() {
+    public int getUserID() {
         return userID;
     }
 
-    public void setUserID(UUID userID) {
+    public void setUserID(int userID) {
         this.userID = userID;
     }
 
