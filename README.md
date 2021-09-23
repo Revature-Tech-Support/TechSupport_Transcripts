@@ -7,14 +7,14 @@ Repository for systems and applications relating to the transcript functionality
 
 
 ## Goal:
-Storing message transcripts on a user by user and chat by chat basis with all kinds of media formats (pdf, video, markdown, etc.).
+Storing message transcripts on a user-by-user and chat-by-chat basis with all kinds of media formats (pdf, video, markdown, etc.).
 
 
 ## User Stories:
 ### User
 - As a User
 - I want chat transcripts
-- So that I can refer back to specifics of support conversation
+- So that I can refer back to specifics of the support conversation
 
 ### Tech Support
 - As a Tech Support
